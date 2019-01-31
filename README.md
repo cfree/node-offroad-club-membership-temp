@@ -1,4 +1,3 @@
 ## What is this?
 
-Just you wait folks!
-w
+A temporary site to live at the `members.` subdomain until the new version can be completed.

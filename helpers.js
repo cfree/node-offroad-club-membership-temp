@@ -14,6 +14,5 @@ exports.dump = obj => JSON.stringify(obj, null, 2);
 exports.siteName = `4-Players of Colorado`;
 
 exports.menu = [
-  { slug: '/', title: 'Home', icon: 'store' },
   { slug: '/register', title: 'Register', icon: 'tag' },
 ];

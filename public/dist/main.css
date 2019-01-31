@@ -260,9 +260,9 @@ body {
   body:before {
     content: '';
     display: block;
-    background: -webkit-gradient(linear, left top, right top, from(#48ded4), color-stop(20%, #a026bf), color-stop(60%, #e82c75), color-stop(85%, #FFC40E), color-stop(95%, #48ded4));
-    background: -o-linear-gradient(left, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
-    background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+    background: -webkit-gradient(linear, left top, right top, from(#FF372D), color-stop(20%, #CE312C), color-stop(60%, #4B5767));
+    background: -o-linear-gradient(left, #FF372D 0%, #CE312C 20%, #4B5767 60%);
+    background: linear-gradient(90deg, #FF372D 0%, #CE312C 20%, #4B5767 60%);
     height: 10px;
     width: 100%; }
 
@@ -702,10 +702,12 @@ body {
   color: #303030; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 5rem;
+  font-size: 2rem;
   font-family: "Open Sans";
-  font-weight: 600;
-  letter-spacing: -1px; }
+  font-weight: 600; }
+  @media (min-width: 720px) {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 3rem; } }
 
 a {
   text-decoration: none;
@@ -715,8 +717,12 @@ p a {
   border-bottom: 2px solid #FFC40E; }
 
 p {
-  line-height: 2;
-  font-size: 1.6rem; }
+  line-height: 1;
+  font-size: 1.2rem; }
+  @media (min-width: 720px) {
+    p {
+      line-height: 2;
+      font-size: 1.6rem; } }
 
 .title {
   word-wrap: break-word;
@@ -763,9 +769,6 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background: #303030; }
   .nav__section {
     display: -webkit-box;
@@ -908,6 +911,166 @@ pre.error {
   background: white;
   line-height: 3;
   white-space: pre-line; }
+
+.container {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 0 10px; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 720px) {
+    .container {
+      padding: 0 15px; } }
+
+.main {
+  padding: 50px 0;
+  font-family: "Open Sans"; }
+  .main p {
+    color: #182337;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0 0 1.5em; }
+    @media (min-width: 720px) {
+      .main p {
+        font-size: 2rem; } }
+  .main h1,
+  .main h2,
+  .main h3,
+  .main h4,
+  .main h5,
+  .main h6 {
+    font-family: "Open Sans";
+    line-height: 1.2;
+    margin: 0.5em 0;
+    clear: both; }
+  .main h1 {
+    font-size: 3rem; }
+    @media (min-width: 720px) {
+      .main h1 {
+        font-size: 4rem; } }
+  .main h2 {
+    font-size: 2.6rem; }
+    @media (min-width: 720px) {
+      .main h2 {
+        font-size: 3.2rem; } }
+  .main h3 {
+    font-size: 2.4rem; }
+    @media (min-width: 720px) {
+      .main h3 {
+        font-size: 3.2rem; } }
+  .main h4 {
+    font-size: 2.2rem; }
+    @media (min-width: 720px) {
+      .main h4 {
+        font-size: 2.4rem; } }
+  .main h5 {
+    font-size: 1.8rem; }
+    @media (min-width: 720px) {
+      .main h5 {
+        font-size: 2.0rem; } }
+  .main h6 {
+    font-size: 1.6rem; }
+    @media (min-width: 720px) {
+      .main h6 {
+        font-size: 1.8rem; } }
+  @media (min-width: 720px) {
+    .main blockquote {
+      margin: 0 1.5em; } }
+  .main blockquote:before,
+  .main blockquote:after,
+  .main q:before,
+  .main q:after {
+    content: ''; }
+  .main blockquote,
+  .main q {
+    padding: 10px 0;
+    text-align: center; }
+    @media (min-width: 720px) {
+      .main blockquote,
+      .main q {
+        padding: 40px 0; } }
+    .main blockquote p,
+    .main q p {
+      font-size: 1.8rem;
+      font-style: italic;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: left; }
+      @media (min-width: 720px) {
+        .main blockquote p,
+        .main q p {
+          font-size: 2.4rem;
+          padding: 20px;
+          width: 70%; } }
+      .main blockquote p p,
+      .main q p p {
+        margin-bottom: 1.5em; }
+  .main ul,
+  .main ol {
+    margin: 0 0 1.5em 0; }
+    @media (min-width: 720px) {
+      .main ul,
+      .main ol {
+        margin: 0 0 1.5em 1.5em; } }
+    .main ul li,
+    .main ol li {
+      padding: 9px 0 7px; }
+  .main ul {
+    list-style: disc; }
+  .main ol {
+    list-style: decimal; }
+  .main li > ul,
+  .main li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em; }
+  .main dt {
+    font-weight: bold; }
+  .main dd {
+    margin: 0 1.5em 1.5em; }
+  .main img {
+    height: auto;
+    max-width: 100%; }
+  .main table {
+    margin: 0 0 1.5em;
+    width: 100%; }
+  .main embed,
+  .main iframe,
+  .main object {
+    max-width: 100%; }
+  .main address {
+    margin: 0 0 1.5em; }
+  .main pre {
+    background: #4B5767;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em; }
+  .main code,
+  .main kbd,
+  .main tt,
+  .main var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 1.5rem; }
+  .main abbr,
+  .main acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help; }
+  .main mark,
+  .main ins {
+    background: #fff9c0;
+    text-decoration: none; }
+  .main big {
+    font-size: 125%; }
+  .main dfn,
+  .main cite,
+  .main em,
+  .main i {
+    font-style: italic; }
 
 
 /*# sourceMappingURL=main.css.map*/

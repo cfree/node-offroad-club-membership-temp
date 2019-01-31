@@ -30,3 +30,22 @@ pre.error {
   line-height: 3;
   white-space: pre-line;
 }
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.container {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: $content;
+  padding: 0 ($space * 0.5);
+
+  @media (min-width: $bp-md) {
+    padding: 0 ($space * 0.75);
+  }
+}
