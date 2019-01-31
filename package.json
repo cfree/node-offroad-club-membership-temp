@@ -8,10 +8,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && node .",
     "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production npm run build && node .",
-    "watch": "NODE_ENV=development nodemon . --ignore public/",
+    "watch": "nodemon . --ignore public/",
     "assets": "webpack -w --display-max-modules 0",
     "build": "webpack"
   },
