@@ -15,7 +15,7 @@
     "assets": "webpack -w --display-max-modules 0",
     "build": "webpack",
     "prod": "npm run build && npm start",
-    "now": "now -e NODE_ENV=production"
+    "now": "now --public"
   },
   "author": "Craig Freeman <craigfreeman@gmail.com>",
   "license": "none",

@@ -1,0 +1,8 @@
+{
+  "name": "4players-membership-temp",
+  "version": 2,
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "7777"
+  }
+}
