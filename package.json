@@ -16,7 +16,7 @@
     "build": "webpack",
     "prod": "npm run build && npm start",
     "now": "now --public",
-    "now-build": "npm run prod"
+    "now-build": "npm run build"
   },
   "author": "Craig Freeman <craigfreeman@gmail.com>",
   "license": "none",
