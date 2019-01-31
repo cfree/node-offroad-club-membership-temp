@@ -8,11 +8,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "node .",
-    "watch": "nodemon . --ignore public/",
-    "assets": "webpack -w --display-max-modules 0"
+    "start": "NODE_ENV=production npm run build && node .",
+    "watch": "NODE_ENV=development nodemon . --ignore public/",
+    "assets": "webpack -w --display-max-modules 0",
+    "build": "webpack"
   },
   "author": "Craig Freeman <craigfreeman@gmail.com>",
   "license": "none",
