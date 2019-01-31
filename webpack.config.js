@@ -99,7 +99,7 @@ const config = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: devMode ? '[name].css' : '[name].[hash].css',
+      filename: '[name].css',
       chunkFilename: '[id].css',
     }),
   ],
