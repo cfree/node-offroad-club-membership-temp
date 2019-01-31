@@ -12,8 +12,8 @@
     "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon . --ignore public/",
-    "assets": "npx webpack -w --display-max-modules 0",
-    "build": "npx webpack"
+    "assets": "webpack -w --display-max-modules 0",
+    "build": "webpack"
   },
   "author": "Craig Freeman <craigfreeman@gmail.com>",
   "license": "none",
@@ -26,9 +26,7 @@
     "pug": "^2.0.3",
     "typeface-josefin-sans": "0.0.54",
     "typeface-merriweather": "0.0.54",
-    "typeface-open-sans": "0.0.54"
-  },
-  "devDependencies": {
+    "typeface-open-sans": "0.0.54",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "autoprefixer": "^9.4.7",
