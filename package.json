@@ -12,8 +12,8 @@
     "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon . --ignore public/",
-    "assets": "webpack -w --display-max-modules 0",
-    "build": "webpack"
+    "assets": "npx webpack -w --display-max-modules 0",
+    "build": "npx webpack"
   },
   "author": "Craig Freeman <craigfreeman@gmail.com>",
   "license": "none",
