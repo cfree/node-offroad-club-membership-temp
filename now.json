@@ -4,5 +4,14 @@
   "env": {
     "NODE_ENV": "production",
     "PORT": "7777"
-  }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ]
 }
